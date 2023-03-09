@@ -9,3 +9,6 @@ ro.telephony.use_old_mnc_mcc_format    u:object_r:telephony_config_prop:s0
 # Recovery update
 persist.vendor.recovery_update         u:object_r:recovery_update_prop:s0
 ro.build.selinux                       u:object_r:build_prop:s0
+
+# System-scheduled backups act as migrations (device-to-device transfers)
+persist.backup.fake-d2d                u:object_r:backup_d2d_prop:s0 exact bool
